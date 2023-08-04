@@ -1,7 +1,5 @@
-using {com.logali as logali} from '../db/schema';
+using com.logali as logali from '../db/schema';
 
-service CustomerService {
-    entity CustomerSrv as projection on logali.Customer;
-
-
+service CatalogService {
+    entity Products as projection on logali.Products;
 }
